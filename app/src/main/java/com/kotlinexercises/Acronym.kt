@@ -18,8 +18,14 @@ package com.kotlinexercises
 */
 
 fun main(){
-    acronym()
+    println( acronym("As Soon As Possible"))
+    println( acronym("Liquid-crystal display"))
+    println( acronym("Thank George It's Friday!"))
 }
-fun acronym(){
-    //function code
+fun acronym(sentence:String):String{
+    val splitSentence = sentence.split(" ","-")
+    var acronymResult:String= ""
+    splitSentence.forEach { acronymResult = acronymResult + ""+ it[0].toUpperCase() }
+
+    return acronymResult
 }
