@@ -12,6 +12,7 @@ package com.kotlinexercises
 */
 fun main(){
 
+    print("solucionado :)")
 }
 
 
